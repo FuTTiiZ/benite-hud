@@ -1,0 +1,42 @@
+.mic {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.mic.no-minimap {
+  transform: skew(7deg, 2deg);
+  translate: 5vw 0;
+}
+
+.mic .icon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px #ffffff23);
+}
+
+.icon path {
+  fill: #fff;
+}
+
+.mic.active .icon {
+  filter: drop-shadow(0 0 10px rgba(var(--color-primary), 0.42));
+}
+
+.mic.active .icon path {
+  fill: rgb(var(--color-primary));
+}
+
+.proximity {
+  margin-top: 34px;
+  opacity: 0.8;
+
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+}

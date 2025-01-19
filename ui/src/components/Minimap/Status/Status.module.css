@@ -1,0 +1,69 @@
+.status {
+  position: absolute;
+  margin-bottom: -5px;
+
+  display: flex;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.status-level {
+  position: relative;
+
+  width: 60px;
+  aspect-ratio: 1;
+
+  margin-left: -10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition:
+    width 0.25s ease-in-out
+  ;
+}
+
+/* .status-level:not(:first-child) {
+  margin-left: -10px;
+} */
+
+.status-level > * {
+  position: absolute;
+}
+
+.status-level svg {
+  rotate: -90deg;
+}
+
+.status-level svg circle {
+  fill: none;
+  stroke-width: 6px;
+  stroke: rgba(var(--status-color), 0.2);
+  stroke-linecap: round;
+
+  transition: stroke-dasharray 0.25s ease-in-out;
+}
+
+.status-level .level {
+  stroke: rgb(var(--status-color));
+  filter: drop-shadow(0 0 15px rgba(var(--status-color), 0.7));
+}
+
+.status-level > div {
+  width: 50%;
+  height: 50%;
+
+  box-shadow: 0 0 20px rgba(var(--status-color), 0.3) inset;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-level > div img {
+  width: 60%;
+  aspect-ratio: 1;
+}

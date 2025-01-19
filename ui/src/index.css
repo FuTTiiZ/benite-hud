@@ -1,0 +1,28 @@
+:root {
+  /* --color-primary: 0, 158, 212; */
+  --color-primary: 0, 255, 0;
+
+  --color-red: 251, 96, 98;
+  --color-green: 117, 247, 152;
+  --color-blue: 110, 181, 241;
+  --color-blue2: 0, 158, 212;
+
+  font-family: Inter;
+}
+
+body {
+  margin: 0;
+  user-select: none;
+
+  color: #fff;
+
+  overflow: hidden;
+}
+
+* {
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}

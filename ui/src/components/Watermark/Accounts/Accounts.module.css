@@ -1,0 +1,62 @@
+.accounts {
+  position: relative;
+  top: 150px;
+
+  padding: 0;
+  margin: 0;
+
+  opacity: 0;
+
+  transform: skewY(-6deg);
+
+  transition: opacity 0.25s ease-in-out;
+}
+
+.account {
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 1.3rem;
+  text-shadow: 0 0 15px #00000069;
+}
+
+.account > div {
+  margin-left: 10px;
+  width: 36px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid rgb(var(--icon-color));
+  box-shadow: 0 0 20px rgba(var(--icon-color), 0.3);
+
+  scale: 0.9;
+}
+
+.account > div > div {
+  width: 88%;
+  height: 88%;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 20px rgba(var(--icon-color), 0.3) inset;
+}
+
+.account img {
+  width: 50%;
+  height: 50%;
+
+  filter: drop-shadow(0 0 5px rgb(var(--icon-color)));
+  opacity: 0.8;
+}

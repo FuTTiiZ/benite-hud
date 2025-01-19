@@ -1,0 +1,91 @@
+.health-armor {
+  position: absolute;
+  transition: none;
+}
+
+.health-armor.no-minimap {
+  transition: margin 0.25s ease-in-out, transform 0.25s ease-in-out;
+
+  margin-top: -35px;
+  transform: skew(7deg, 2deg);
+}
+
+.health-armor > div {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.health-armor.no-minimap > div {
+  width: 110%;
+}
+
+.health-armor > div,
+.health-armor span {
+  border-radius: 1px;
+}
+
+.health-armor.no-minimap > div,
+.health-armor.no-minimap span {
+  transition: all 0.25s ease-in-out, width 0.15s ease-in-out;
+}
+
+.health-armor span {
+  border-radius: 0px;
+
+  display: block;
+  height: 100%;
+}
+
+.health {
+  height: 7px;
+
+  box-shadow: 0 0 15px rgba(var(--color-green), 0.42) inset,
+    0 0 15px rgba(var(--color-green), 0.137);
+}
+
+.no-minimap .health {
+  height: 18px;
+  padding-inline: 4px;
+
+  border: 2px solid rgba(var(--color-green), 0.42);
+  box-shadow: 0 0 25px rgba(var(--color-green), 0.42) inset;
+}
+
+.health span {
+  background: rgb(var(--color-green));
+  filter: drop-shadow(0 0 15px rgb(var(--color-green)));
+}
+
+.no-minimap .health span {
+  height: 10px;
+  filter: drop-shadow(0 0 7px rgb(var(--color-green)));
+}
+
+.armor {
+  margin-top: 2px;
+
+  height: 3px;
+
+  box-shadow: 0 0 15px rgba(var(--color-blue), 0.42) inset,
+    0 0 15px rgba(var(--color-blue), 0.137);
+}
+
+.no-minimap .armor {
+  height: 10px;
+  padding-inline: 2px;
+
+  border: 1px solid rgba(var(--color-blue), 0.42);
+  box-shadow: 0 0 15px rgba(45, 74, 97, 0.412) inset,
+    0 0 15px rgba(45, 74, 97, 0.137);
+}
+
+.armor span {
+  background: rgb(var(--color-blue));
+  filter: drop-shadow(0 0 15px rgb(var(--color-blue)));
+}
+
+.no-minimap .armor span {
+  height: 6px;
+}

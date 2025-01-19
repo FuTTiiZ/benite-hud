@@ -1,0 +1,63 @@
+.minimap {
+  position: absolute;
+  box-sizing: border-box;
+
+  border: 1px solid #fff;
+
+  box-shadow: 0 0 15px #000000, 0 0 35px rgb(var(--color-primary)) inset;
+
+  opacity: 0.5;
+}
+
+@keyframes location-appear {
+  0% {
+    opacity: 0;
+    translate: 0 50%;
+  }
+}
+
+.location {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+
+  animation: location-appear 0.5s ease-in-out;
+}
+
+.location svg {
+  width: 26px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px rgba(var(--color-primary), 0.42));
+}
+
+.location h3,
+.location p {
+  margin: 0;
+}
+
+.location h3 {
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 1px;
+  opacity: 0.4;
+}
+
+@keyframes location-change {
+  0% {
+    transform: skewX(15deg);
+  }
+  50% {
+    text-shadow: 0 0 5px #00000069;
+    transform: skewX(-15deg);
+    filter: blur(1px);
+    scale: 1.1;
+  }
+}
+
+.location p {
+  text-transform: capitalize;
+  font-size: 0.95rem;
+
+  text-shadow: 0 0 15px #000;
+}
